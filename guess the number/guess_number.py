@@ -6,7 +6,7 @@ choice_number = input('Por favor, insira o número limite para o desafio: ')
 if choice_number.isdigit():
     choice_number = int(choice_number)
 else:
-    print('Erro: o valor informado não é um número. Por favor, execute novamente e informe o novo número.')
+    print('Erro: o valor informado não é um número. Por favor, execute novamente, um número.')
     quit()
 
 random_number = random.randint(0, choice_number)
