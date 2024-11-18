@@ -62,7 +62,7 @@ else:
     print('Wrong answer.')
 
 # Pergunta 7
-print('What is the Sun primarily composed of? \n (A) Oxygen and nitrogen \n (B) Helium and hydrogen \n (C) Carbon and helium \n (D) Hydrogen and carbon dioxide')
+print('What is the Sun primarily composed of? \n (A) Oxygen and nitrogen  \n (B) Helium and hydrogen \n (C) Carbon and helium \n (D) Hydrogen and carbon dioxide')
 answer_7 = input("Answer: ").upper()
 if answer_7 == "B":
     print('Correct. Amazing!')
