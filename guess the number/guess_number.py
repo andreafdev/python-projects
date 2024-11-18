@@ -1,33 +1,33 @@
 import random
 
 print('Welcome to the Guess Number!')
-choice_number = input('Por favor, insira o número limite para o desafio: ')
+choice_number = input('Please enter the limit number for the challenge: ')
 
 if choice_number.isdigit():
     choice_number = int(choice_number)
 else:
-    print('Erro: o valor informado não é um número. Por favor, execute novamente, um número.')
+    print('Error: the value entered is not a number. Please run again and enter a number.')
     quit()
 
 random_number = random.randint(0, choice_number)
 n_choices = 0
 
 while True:
-    answer_user = input('Advinhe o número: ')
+    answer_user = input('Guess the number: ')
 
     if answer_user.isdigit():
         answer_user = int(answer_user)
     else:
-        print('PErro: o valor informado não é um número. Por favor, informe um número.')
+        print('Error: the value entered is not a number. Please enter a valid number.')
         continue
 
     n_choices = n_choices + 1
     if answer_user == random_number:
-        print('Acertou!')
+        print('You got it right!')
         break
     elif answer_user > random_number:
-        print('Chutou alto, o número é menor que isso...')
+        print('You guessed too high, the number is smaller than that...')
     else:
-        print('Chutou baixo, o número é maior que isso...')
+        print('You guessed too low, the number is larger than that...')
 
-print("Sua quantidade de tentativas foi:  " + str(n_choices))
+print("Your number of attempts was: " + str(n_choices))
